@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  Node-RED:
+    image: nodered/node-red:latest-minimal
+    hostname: Node-RED
+    restart: always
+    networks:
+        vlan:
+            ipv4_address: ${IP}
