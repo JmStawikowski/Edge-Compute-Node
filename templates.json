@@ -22,7 +22,7 @@
       {
         "name": "NAME",
         "label": "NAME",
-        "default": "Pump1",
+        "default": "Pump",
         "preset": false
       },
       {
@@ -40,8 +40,8 @@
             "value": "edge"
           },
           {
-            "text": "VLAN",
-            "value": "VLAN"
+            "text": "vlan",
+            "value": "vlan"
           }
         ]
       }
@@ -76,8 +76,8 @@
             "value": "edge"
           },
           {
-            "text": "VLAN",
-            "value": "VLAN"
+            "text": "vlan",
+            "value": "vlan"
           }
         ]
       }
