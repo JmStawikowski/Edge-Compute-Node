@@ -133,7 +133,7 @@
   },
   {
     "type": 3,
-    "title": "Nginx-amd64 [stack]",
+    "title": "Nginx",
     "description": "Official build of Nginx.",
     "categories": [
       "schneider-electric"
