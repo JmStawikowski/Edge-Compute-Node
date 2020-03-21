@@ -4,7 +4,7 @@
     "title": "Pump",
     "description": "Manage  Pump in your Device",
     "categories": [
-      "schneider-electric"
+      "network-edge"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Pump.png",
@@ -52,13 +52,13 @@
     "title": "Node-RED",
     "description": "Low-code programming for event-driven applications.",
     "categories": [
-      "schneider-electric"
+      "network-edge"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Node-red-icon.png",
     "repository": {
       "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
-      "stackfile": "stacks/nodered/node-red.yml"
+      "stackfile": "stacks/nodered/node-red-edge.yml"
     },
     "env": [
       {
@@ -66,20 +66,28 @@
         "label": "PORT",
         "default": "8010",
         "preset": false
-      },
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Node-RED",
+    "description": "Low-code programming for event-driven applications.",
+    "categories": [
+      "network-vlan"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Node-red-icon.png",
+    "repository": {
+      "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
+      "stackfile": "stacks/nodered/node-red-vlan.yml"
+    },
+    "env": [
       {
-        "name": "NETWORK",
-        "label": "NETWORK",
-        "select": [
-          {
-            "text": "edge",
-            "value": "edge"
-          },
-          {
-            "text": "vlan",
-            "value": "vlan"
-          }
-        ]
+        "name": "IP",
+        "label": "IP",
+        "default": "192.168.0.21",
+        "preset": false
       }
     ]
   },
@@ -88,7 +96,7 @@
     "title": "Eclipse-Mosquitto",
     "description": "Eclipse Mosquitto is an open source message broker which implements MQTT version 5, 3.1.1 and 3.1.",
     "categories": [
-      "schneider-electric"
+      "network-edge"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Eclipse-Mosquitto.png",
@@ -110,7 +118,7 @@
     "title": "Nginx",
     "description": "Official build of Nginx.",
     "categories": [
-      "schneider-electric"
+      "network-edge"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Nginx.png",
