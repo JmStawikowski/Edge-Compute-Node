@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  Pump:
+    image: digitalplant/pump:latest-minimal
+    hostname: Pump
+    restart: always
+    ports:
+      - ${PORT}:1880
+    environment:
+      - DEVICE_PORT=${PORT}
+      - DEVICE_PROXY=${PROXY}
+      - DEVICE_NODE_HOSTNAME=${NAME}
+      - DEVICE_SERVICE_NAME=${TYPE}

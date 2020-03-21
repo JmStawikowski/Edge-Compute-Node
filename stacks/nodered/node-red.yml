@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  Node-RED:
+    image: nodered/node-red:latest-minimal
+    hostname: Node-RED
+    restart: always
+    ports:
+      - ${PORT}:1880
+    environment:
+      - DEVICE_PORT=${PORT}
+      - DEVICE_PROXY=${PROXY}

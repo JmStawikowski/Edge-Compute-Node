@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  eclipse-mosquitto:
+    image: eclipse-mosquitto:latest
+    hostname: eclipse-mosquitto
+    restart: always
+    ports:
+      - ${PORT}:1880

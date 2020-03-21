@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  nginx:
+    container_name: Nginx-${PORT}
+    image: digitalplant/nginx:stable-alpine
+    volumes:
+      - Nginx-${PORT}-Html:/usr/share/nginx/html/
+      - Nginx-${PORT}-Etc:/etc/nginx/
+    hostname: nginx-${PORT}
+    restart: always
+    ports:
+      - ${PORT}:80
