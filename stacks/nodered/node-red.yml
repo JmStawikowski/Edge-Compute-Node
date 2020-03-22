@@ -9,12 +9,12 @@ services:
     ports:
         - ${PORT:-1880}:1880
     networks:
-        front:
-            ipv4_address: ${IP}
+        myNetwork:
+#         ipv4_address: ${IP}
     volumes:
         - ${CONTAINER_NAME}:/data
 
 networks:
-    front:
+    myNetwork:
         external:
             name: ${NETWORK}
