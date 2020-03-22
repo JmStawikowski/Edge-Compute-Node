@@ -4,12 +4,14 @@ services:
   Node-RED:
     image: nodered/node-red:latest-minimal
     hostname: Node-RED
-    restart: always
+    restart: always 
     ports:
         - ${PORT}:1880
     networks:
         front:
-            ipv4_address: ${IP}       
+            ipv4_address: ${IP}
+    volumes:
+        - Node-RED:/data            
 
 networks:
     front:
