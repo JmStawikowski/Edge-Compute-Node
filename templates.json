@@ -4,7 +4,7 @@
     "title": "Pump",
     "description": "Manage  Pump in your Device",
     "categories": [
-      "network-edge"
+      "schneider-electric"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Pump.png",
@@ -49,10 +49,10 @@
   },
   {
     "type": 3,
-    "title": "Node-RED-Edge",
+    "title": "Node-RED",
     "description": "Low-code programming for event-driven applications.",
     "categories": [
-      "network-edge"
+      "schneider-electric"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Node-red-icon.png",
@@ -65,28 +65,6 @@
         "name": "PORT",
         "label": "PORT",
         "default": "8010",
-        "preset": false
-      }
-    ]
-  },
-  {
-    "type": 3,
-    "title": "Node-RED-Vlan",
-    "description": "Low-code programming for event-driven applications.",
-    "categories": [
-      "network-vlan"
-    ],
-    "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Node-red-icon.png",
-    "repository": {
-      "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
-      "stackfile": "stacks/nodered/node-red-vlan.yml"
-    },
-    "env": [
-      {
-        "name": "IP",
-        "label": "IP",
-        "default": "192.168.0.21",
         "preset": false
       }
     ]
@@ -118,7 +96,7 @@
     "title": "Nginx",
     "description": "Official build of Nginx.",
     "categories": [
-      "network-edge"
+      "schneider-electric"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Nginx.png",
