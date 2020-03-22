@@ -81,7 +81,7 @@
             "value": "vlan"
             }
           ],
-          "description": "Some environment variable."
+          "description": "Specify a custom network edge/bridge or vlan/macvlan."
         },
         {
             "name": "IP",
@@ -95,7 +95,7 @@
           "label": "PORT",
           "default": "",
           "preset": false,
-          "description": "Specify a custom container Port."
+          "description": "Specify a custom container Port for edge/bridge network."
         }
       ]
     },
