@@ -1,0 +1,154 @@
+[
+  {
+    "type": 3,
+    "title": "Pump",
+    "description": "Manage  Pump in your Device",
+    "categories": [
+      "network-edge"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Pump.png",
+    "repository": {
+      "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
+      "stackfile": "stacks/pump/pump.yml"
+    },
+    "env": [
+      {
+        "name": "PORT",
+        "label": "PORT",
+        "default": "8010",
+        "preset": false
+      },
+      {
+        "name": "NAME",
+        "label": "NAME",
+        "default": "Pump",
+        "preset": false
+      },
+      {
+        "name": "TYPE",
+        "label": "TYPE",
+        "default": "Module",
+        "preset": false
+      },
+      {
+        "name": "NETWORK",
+        "label": "NETWORK",
+        "select": [
+          {
+            "text": "edge",
+            "value": "edge"
+          },
+          {
+            "text": "vlan",
+            "value": "vlan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Node-RED",
+    "description": "Low-code programming for event-driven applications.",
+    "categories": [
+      "network-edge"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Node-red-icon.png",
+    "repository": {
+      "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
+      "stackfile": "stacks/nodered/node-red-edge.yml"
+    },
+    "env": [
+        {
+            "name": "NETWORK",
+            "label": "NETWORK",
+            "select": [
+                {
+                "text": "edge",
+                "value": "edge"
+                },
+                {
+                "text": "vlan",
+                "value": "vlan"
+                }
+            ]
+        },
+        {
+            "name": "PORT",
+            "label": "PORT",
+            "default": "8010",
+            "preset": false
+        },
+        {
+            "name": "IP",
+            "label": "IP",
+            "default": "192.168.0.21",
+            "preset": false
+        }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Eclipse-Mosquitto",
+    "description": "Eclipse Mosquitto is an open source message broker which implements MQTT version 5, 3.1.1 and 3.1.",
+    "categories": [
+      "network-edge"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Eclipse-Mosquitto.png",
+    "repository": {
+      "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
+      "stackfile": "stacks/eclipse-mosquitto/eclipse-mosquitto.yml"
+    },
+    "env": [
+      {
+        "name": "PORT",
+        "label": "PORT",
+        "default": "8020",
+        "preset": false
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Nginx",
+    "description": "Official build of Nginx.",
+    "categories": [
+      "network-edge"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Nginx.png",
+    "repository": {
+      "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
+      "stackfile": "stacks/nginx/nginx.yml"
+    },
+    "env": [
+      {
+        "name": "PORT",
+        "label": "PORT",
+        "default": "8030",
+        "preset": false
+      },
+      {
+        "name": "PORT_SETTINGS",
+        "label": "PORT_SETTINGS",
+        "default": "8060",
+        "preset": false
+      },
+      {
+        "name": "USERNAME",
+        "label": "USERNAME",
+        "default": "admin",
+        "preset": false
+      },
+      {
+        "name": "PASSWORD",
+        "label": "PASSWORD",
+        "default": "admin",
+        "preset": false
+      }
+    ]
+  }
+]
