@@ -3,7 +3,8 @@ version: '2'
 services:
   Node-RED:
     image: nodered/node-red:latest-minimal
-    hostname: Node-RED
+    container_name: Node-RED-${PORT}
+    hostname: Node-RED-${PORT}
     restart: always 
     ports:
         - ${PORT}:1880
