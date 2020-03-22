@@ -58,7 +58,7 @@
     "logo": "https://raw.githubusercontent.com/JmStawikowski/Edge-Compute-Node/master/images/logos/Node-red-icon.png",
     "repository": {
       "url": "https://github.com/JmStawikowski/Edge-Compute-Node",
-      "stackfile": "stacks/nodered/node-red-edge.yml"
+      "stackfile": "stacks/nodered/node-red.yml"
     },
     "env": [
         {
