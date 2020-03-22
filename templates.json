@@ -72,11 +72,7 @@
               {
               "text": "vlan",
               "value": "vlan"
-              },
-              {
-                "text": "vlan2",
-                "value": "vlan2"
-                }              
+              }         
             ]
         },
         {
