@@ -62,23 +62,31 @@
     },
     "env": [
         {
-            "name": "NETWORK",
-            "label": "NETWORK",
-            "select": [
-                {
-                "text": "edge",
-                "value": "edge"
-              },
-              {
-              "text": "vlan",
-              "value": "vlan"
-              }
-            ]
+            "name": "CONTAINER_NAME",
+            "label": "CONTAINER NAME",
+            "default": "Node-RED",
+            "preset": false
+        },
+        {
+          "name": "NETWORK",
+          "label": "NETWORK",
+          "description": "Driver options are specific to the selected network/driver.",
+          "select": [
+            {
+              "text": "edge",
+              "value": "edge"
+            },
+            {
+            "text": "vlan",
+            "value": "vlan"
+            }
+          ],
+          "description": "Some environment variable."
         },
         {
             "name": "IP",
             "label": "IP",
-            "default": "192.168.0.21",
+            "default": "192.168.0.2",
             "preset": false
         },
         {
@@ -86,9 +94,9 @@
           "label": "PORT",
           "default": "8010",
           "preset": false
-      }
-    ]
-  },
+        }
+      ]
+    },
   {
     "type": 3,
     "title": "Eclipse-Mosquitto",
