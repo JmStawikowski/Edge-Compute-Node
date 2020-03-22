@@ -11,7 +11,7 @@ services:
         front:
             ipv4_address: ${IP}
     volumes:
-        - "Node-RED-${PORT}":/data
+        - "Node_RED_${PORT}":/data
 
 networks:
     front:
