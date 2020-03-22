@@ -40,10 +40,11 @@
             "value": "edge"
           },
           {
-            "text": "vlan",
-            "value": "vlan"
+          "text": "vlan",
+          "value": "vlan"
           }
-        ]
+        ],
+        "description": "Specify a custom network edge/bridge or vlan/macvlan."
       }
     ]
   },
@@ -67,21 +68,13 @@
             "default": "Node-RED",
             "preset": false,
             "description": "Specify a custom container name."
-          },
+        },
         {
           "name": "NETWORK",
           "label": "NETWORK",
-          "select": [
-            {
-              "text": "edge",
-              "value": "edge"
-            },
-            {
-            "text": "vlan",
-            "value": "vlan"
-            }
-          ],
-          "description": "Specify a custom network edge/bridge or vlan/macvlan."
+          "default": "",
+          "preset": false,
+          "description": "Specify a custom network."
         },
         {
             "name": "IP",
@@ -89,7 +82,7 @@
             "default": "",
             "preset": false,
             "description": "Specify a custom container IP."
-          },
+        },
         {
           "name": "PORT",
           "label": "PORT",
