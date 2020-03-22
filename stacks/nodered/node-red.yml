@@ -10,7 +10,7 @@ services:
         - ${PORT:-1880}:1880
     networks:
         front:
-            ipv4_address: ${IP:-172.40.0.2}
+            ipv4_address: ${IP}
     volumes:
         - ${CONTAINER_NAME}:/data
 
