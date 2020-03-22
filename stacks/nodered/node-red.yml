@@ -9,12 +9,17 @@ services:
     ports:
         - ${PORT:-1880}:1880
     networks:
-        myNetwork:
+        edge:
+#         ipv4_address: ${IP}            
+        vlan:
 #         ipv4_address: ${IP}
     volumes:
         - ${CONTAINER_NAME}:/data
 
 networks:
-    myNetwork:
+    edge:
         external:
-            name: ${NETWORK}
+            name: edge
+    vlan:
+        external:
+            name: vlan            
