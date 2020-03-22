@@ -7,10 +7,10 @@ services:
     hostname: ${CONTAINER_NAME}
     restart: always 
     ports:
-        - ${PORT}:1880
+        - ${PORT:-1880}:1880
     networks:
         front:
-            ipv4_address: ${IP}
+            ipv4_address: ${IP:-172.40.0.2}
     volumes:
         - ${CONTAINER_NAME}:/data
 
