@@ -3,8 +3,8 @@ version: '2'
 services:
   Node-RED:
     image: nodered/node-red:latest-minimal
-    container_name: Node-RED-${PORT}
-    hostname: Node-RED-${PORT}
+    container_name: ${CONTAINER_NAME}-Node-RED
+    hostname: ${CONTAINER_NAME}-Node-RED
     restart: always 
     ports:
         - ${PORT}:1880
@@ -12,7 +12,7 @@ services:
         front:
             ipv4_address: ${IP}
     volumes:
-        - Node-RED-${PORT}:/data
+        - ${CONTAINER_NAME}-Node-RED:/data
 
 networks:
     front:
