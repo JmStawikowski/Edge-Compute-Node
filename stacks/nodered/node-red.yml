@@ -11,7 +11,7 @@ services:
         front:
             ipv4_address: ${IP}
     volumes:
-        - "${COMPOSE_PROJECT_NAME}-Node-RED":/data            
+        - "${com.docker.compose.project}-Node-RED":/data
 
 networks:
     front:
